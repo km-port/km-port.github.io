@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title> ALTAIR</title>
+<meta name="description" content="職人が仕立てる精巧なスーツ">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Antique&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style-suit.css">
+</head>
+
+<body>
+
+<main class="container">
+    <div class="main">
+        <div class="main-imgbox">
+            <img class="main-img" src="images/suit.jpeg" alt="スーツ">
+        </div>
+        <div class="main-name">
+            <h2 class="logo"><img class="logo-size" src="logo.svg" alt="アルタイル"></h2>
+        </div>
+    </div>
+
+
+    <!--本文-->
+    <section class="text-area">
+        <div class="page-title"><h1><span class="text-blue">品格</span>は、<span class="text-blue">仕立て</span>で決まる</h1></div><!--キャッチコピー-->
+
+        <div class="text">
+            <div class="text-set">
+                <h2 class="page-minititle"> 一着一着に<br>妥協のない素材選びと設計を </h2>
+                <p class="page-text"> 世界各地から厳選した上質な生地と、日本人の体型に合わせたパターン設計により、見た目の美しさだけでなく、着心地の良さまで追求しています。日常のビジネスシーンでも、特別な場でも、自信を持って纏える一着をご提供します。 </p>
+            </div>
+
+            <div class="text-set">
+                <h3 class="page-minititle"> 熟練の職人による<br>精緻な仕立て </h3>
+                <p class="page-text"> 長年の経験を積んだ職人が、細部まで丁寧に仕上げることで、身体に自然に馴染むシルエットを実現します。肩のライン、袖の収まり、ボタンの位置に至るまで計算された設計は、着る人の魅力を最大限に引き立てます。</p>
+            </div>
+
+            <div class="text-set">
+                <h3 class="page-minititle"> 仕立てて終わりではない<br>長く寄り添う一着へ</h3>
+                <p class="page-text"> 体型の変化や着用による消耗に合わせて、サイズ調整やメンテナンスを承ります。長く愛用していただくために、購入後も安心してお任せいただけるサポート体制を整えています。 </p>
+            </div>
+            <div class="button">
+            ご予約は<a href="reservation.html">こちら</a>
+            </div>
+        </div>
+    </section>
+<!--本文-->
+
+<section class="page-shop">
+    <div><h3>SHOP</h3></div>
+    <table class="info">
+    <tr>
+        <th>ADRESS</th>
+        <td>東京都XXX XXX XX-XX-XX</td>
+    </tr>
+    <tr>
+        <th>TEL</th>
+        <td>XX-XXXX-XXXX</td>
+        </tr>
+        <tr>
+            <th>営業時間</th>
+            <td>9:00~21:00</td>
+        </tr>
+    </table>
+
+</section>
+</main>
+
+<footer>
+<div><h2 class="logo"><img class="logo-size" src="logo.svg" alt="アルタイル"></h2></div>
+<div class="copyright"> 
+<small> &copy; 2026 ALTAIR</small>
+</div>
+
+</footer>
+
+</body>
+
+</html>
