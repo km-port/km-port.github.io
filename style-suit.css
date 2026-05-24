@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+html{
+font-size: 100%;
+}
+body {
+font-family: "Zen Old Mincho", serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing: 0.2em;
+line-height: 1.7;
+color: #E3E3E3;
+background-color: #092237;
+background-image: url(images/back.png);
+background-repeat: no-repeat;
+background-size:cover;
+height:100vh;
+}
+
+a{
+font-size: 1.5rem;
+text-decoration: underline;
+text-align: center;
+color: #4997bc;
+}
+
+a:hover{
+    color: #6a4928;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+}
+
+header{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #4997bc;
+}
+
+.logo{
+margin:16px 0px;
+}
+
+.main{
+display: flex;
+justify-content: center;
+max-width: 100vw;
+height: 80vh;
+}
+
+.main-imgbox{
+    flex:1;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.main-name{
+display: flex;
+background-color: #6a4928;
+flex:1;
+justify-content: center;
+align-items: center;
+}
+
+.logo-size{
+    width: 160px;
+    height: auto;
+}
+
+.text-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title{
+font-size: 0.8em;
+text-align: center;
+font-weight: 100;
+margin-top: 5rem;
+margin-bottom: 5rem;
+}
+
+.text-blue{
+color: #4997bc;
+}
+
+.text{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+ 
+.text-set{
+    max-width: 600px;
+    background-color: #6a4928;
+    margin-bottom: 5rem;
+}
+
+
+
+.page-minititle{
+font-size: 1.3rem;
+font-weight: 100;
+text-align: center;
+text-decoration: underline;
+line-height: 1.7;
+letter-spacing: 0.2rem;
+padding: 1.5rem;
+margin-bottom: 2rem 2rem 0;
+}
+
+.page-text{
+text-align: justify ;
+line-height: 1.7;
+font-weight: 100;
+padding: 1.5rem;
+background-color: #6a4928;
+}
+
+.button{
+display: flex;
+justify-content: center;
+font-size: 1.5rem;
+color: #4997bc;
+margin-bottom: 5rem;
+}
+
+.page-shop{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 6rem;
+}
+
+.page-shop h3{
+font-family: "Zen Old Mincho", serif;
+font-weight: 300;
+font-style: normal;
+font-size: 1.5rem;
+}
+
+.info{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 1.5rem;
+    border-spacing: 0;
+    text-align: center;
+    font-family: "Zen Old Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.info th,
+.info td{
+    border-bottom: 2px solid #6a4928;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.info th{
+font-weight: 200;
+padding: 1rem;
+}
+
+.info td{
+    padding: 1rem;
+}
+
+footer{
+    background-color: #6a4928;
+}
+
+.fotter-sitemap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+
+}
+
+footer li{
+    margin-left: 1em;
+
+}
+
+footer a{
+    font-size: 1rem;
+    color: #E3E3E3;
+}
+
+.copyright{
+text-align:center;
+padding: 2rem 0;
+color: #E3E3E3;
+}
+
+@media (min-width: 800px){
+    .logo-size{
+        width: 250px;
+        height: auto;
+    }
+    
+    .page-title{
+        font-size: 1.3em;
+    }
+
+    .page-minititle{
+    font-size: 1.5rem;
+    }
+}
