@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+html{
+font-size: 100%
+}
+
+body{
+font-family: "Zen Maru Gothic", sans-serif;
+font-weight: 400;
+font-style: normal;
+color: #003740;
+background-color: #feeedc;
+line-height: 1.7;
+}
+
+
+a{
+text-decoration: none;
+color: #003740;
+}
+
+
+img{
+max-width: 100%;
+max-height: 100%;
+}
+
+h2{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: bold;
+}
+
+.margin-group{
+    margin-top: 16px;
+}
+
+.margin-others{
+    margin-top: 32px;
+}
+
+.margin-under{
+    margin-bottom: 32px;
+}
+
+.border{
+    border-bottom: 2px dotted #f5b5a7;
+}
+
+
+header{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+background-color: #f5b5a7;
+}
+
+.logo{
+margin: 0.5rem ;
+width: 40vw;
+}
+header p{
+    font-size: 0.5rem;
+}
+
+.top-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url(images-freshers/suit-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.top-catch{
+    background-color: #003740;
+    padding: 1em;
+}
+
+.top-text{
+    color: #feeedc;
+}
+.pink{
+    color: #f5b5a7;
+}
+
+.reservation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-btn{
+    display: inline-block;
+    background-color: #f5b5a7;
+    color: #003740;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 8px;
+    transition: .3s;
+}
+.reservation-btn:hover{
+    background-color: #C1797C;
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-exp{
+    padding-bottom: 1em;
+}
+
+#lineup h2{
+    text-align: center;
+}
+
+.lineup-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.lineup-tile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 168px;
+    height: 304px;
+    margin: 8px;
+    background-color: #fff5ea;
+}
+
+.lineup-img{
+    flex: 50%;
+}
+
+.lineup-title{
+    flex: 10%;
+}
+
+.lineup-text{
+    flex: 40%;
+}
+
+#tiktok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tiktok-btn{
+    display: inline-block;
+    color: #feeedc;
+    background-color: #003740;
+    border-radius: 8px;
+    padding: 0.5em 1em 0.5em 1em;
+    transition: .3s;
+}
+.tiktok-btn:hover{
+    background-color: #000D10;
+    color: #f5b5a7;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-title{
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    border-spacing: 0;
+}
+
+.info th,
+.info td{
+    border-bottom: 1px solid #003740;
+}
+
+.info th{
+    text-align: left;
+    font-weight: normal;
+    padding: 1em;
+}
+
+.info td{
+    padding: 1em;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5b5a7;
+    color: #feeedc;
+}
+
+.logo-home img{
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 50vw;
+}
+
+@media (min-width: 800px){
+    header .logo{
+    margin: 0.5rem;
+    width: 25vw;
+    }
+
+    .reservation-btn{
+        font-size: 2rem;
+    }
+
+    .top-img{
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+    .top-text{
+        font-size: 2em;
+    }
+
+    .text-media{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .article-img{
+        flex: 1;
+    }
+
+    .text-exp{
+        flex: 1;
+    }
+}
