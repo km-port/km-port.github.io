@@ -181,30 +181,10 @@ padding: 1rem;
 }
 
 footer{
-    background-color: #6a4928;
-}
-
-.fotter-sitemap{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-footer ul{
-    display: flex;
-    list-style-type: none;
-
-}
-
-footer li{
-    margin-left: 1em;
-
-}
-
-footer a{
-    font-size: 1rem;
-    color: #E3E3E3;
+    background-color: #6a4928;
 }
 
 .copyright{
