@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mellow</title>
+
+    <meta name="description" content="ポートフォリオサイト">
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="cafe-style.css">
+    <script src="cafe-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-img">
+            <div class="top-textarea flex-center">
+                <h1>Merrow</h1>
+                <h2>丁寧に淹れた一杯と心ほどける空間</h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about flex-center padding-other">
+            <div class="title">
+                <h2>一杯のコーヒーを<br>もっと身近に</h2>
+            </div>
+            <div class="text margin-other">
+                <p>厳選した豆を使用し、一杯ずつ丁寧にハンドドリップ。<br>香りや味わいはもちろん、過ごす時間まで心地よく感じられるよう、空間づくりにもこだわっています。</p>
+                <p>忙しい毎日の中で、少し肩の力を抜ける場所でありたい。<br>そんな想いを込めたカフェです。</p>
+            </div>
+        </section>
+
+        <section class="flex-center-row coffee padding-other-media margin-group">
+            <div class="flex-center media-title">
+                <div class="title padding-group">
+                    <h2 class="en">Coffee</h2>
+                </div>
+                <div class="subtitle">
+                    <h3>こだわりのスペシャルティコーヒー</h3>
+                </div>
+            </div>
+            <div class="text-img margin-family-media">
+                <img src="cafe-img/coffee.jpeg" alt="コーヒー豆">
+            </div>
+            <div class="text">
+                <p>季節ごとに豆を選び、それぞれの個性を引き出せるよう丁寧に抽出しています。</p>
+                <p>フルーティーな香り</p>
+                <p>やさしい甘み</p>
+                <p>すっきりとした後味。</p>
+                <p>コーヒーが少し苦手な方にも楽しんでいただける一杯をご提案します。</p>
+            </div>
+        </section>
+
+        <section class="menu flex-center-row padding-other-media margin-group">
+            <div class="flex-center media-title">
+                <div class="title padding-group">
+                    <h2 class="en">Menu</h2>
+                </div>
+                <div class="subtitle">
+                    <h3>季節を楽しむメニュー</h3>
+                </div>
+            </div>
+            <div class="text-img margin-family-media">
+                <img src="cafe-img/food.jpeg" alt="スイーツの写真">
+            </div>
+            <div class="text">
+                <p>
+                    自家製スイーツや軽食も、コーヒーとの相性を考えてご用意しています。<br>季節限定メニューもぜひお楽しみください。
+                </p>
+
+                <ul class="padding-family">
+                    <li>カフェラテ</li>
+                    <li>ハンドドリップコーヒー</li>
+                    <li>自家製チーズケーキ</li>
+                    <li>キャロットケーキ</li>
+                    <li>季節のタルト</li>
+                </ul>
+
+                <p class="text-end">...etc</p>
+            </div>
+        </section>
+
+        <section class="space flex-center-row padding-other-media margin-group">
+            <div class="flex-center media-title">
+                <div class="title padding-group">
+                    <h2 class="en">Space</h2>
+                </div>
+                <div class="subtitle">
+                    <h3>ひとりでも、心地よく</h3>
+                </div>
+            </div>
+            <div class="text-img margin-family-media">
+                <img src="cafe-img/shop.jpeg" alt="店内写真">
+            </div>
+            <div class="text">
+                <p>木の温もりを感じる店内は、おひとりでもゆったり過ごせる空間に。<br>読書や作業、友人とのカフェタイムなど、思い思いの時間をお楽しみいただけます。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex-center">
+        <div class="access flex-center padding-footer">
+            <div class="text flex-center margin-group">
+                <p>〇〇駅から徒歩5分。<br>お買い物帰りやお仕事終わりにも、ぜひお気軽にお越しください。</p>
+            </div>
+        </div>
+        <div class="flex-center-row">
+            <div class="shop  flex-end">
+                <div class="padding-group">
+                    <h1>Merrow</h1>
+                </div>
+                <div class="address">
+                    <p>〒XXX-XXXX</p>
+                    <p>東京都XXXXXXX XX-XX-XX</p>
+                    <p>11:00～21:00</p>
+                </div>
+            
+        
+
+                <div class="flex-center">
+                    <a class="btn" href="https://www.instagram.com">Instagram</a>
+                </div>
+            </div>
+
+            <div class="shop flex-end">
+                <div class="caution">
+                    <p>※このサイトはポートフォリオ用の架空の店舗サイトです。<br>実在の人物、団体、店舗とは一切関係ありません。</p>
+                </div>
+                <div class="copyright">
+                    <small>&copy; cafe Mellow</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
