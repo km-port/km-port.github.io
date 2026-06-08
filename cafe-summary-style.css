@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+.container{
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+
+.item img{
+    height: 140px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 16px;/*角をまるめる*/
+}
+
+.item p{
+    font-size: 0.8rem;
+}
