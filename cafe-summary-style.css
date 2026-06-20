@@ -26,7 +26,7 @@ h3{
 }
 
 .cinzel{
-    font-family: "Cinzel Decorative", serif, 'Yu Mincho';
+    font-family: "Cinzel Decorative", "Zen Antique", serif, 'Yu Mincho';
     font-weight: 900;
     font-style: normal;
 }
@@ -102,23 +102,27 @@ h3{
     line-height: 3;
 }
 
-
-
-.hidden{
+.item{
+    opacity: 0;
     display: none;
+}
+
+.item.hidden{
+    opacity: 1;
+    display: block;
 }
 
 .trigger{
     color: #544546;
     margin-right: 1rem;
-    background-color: #EDBCB5;
     border-radius: 5px;
     padding: .1rem;
+    background-color: transparent;
     transition: background-color 0.3s;
 }
 
 .trigger.is-active{
-    background-color: transparent;
+    background-color: #EDBCB5;
 }
 
 .container{
