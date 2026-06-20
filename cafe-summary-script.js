@@ -16,3 +16,4 @@ triggers.forEach(trigger =>{
         });
     })
 });
+
