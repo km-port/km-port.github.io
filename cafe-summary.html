@@ -1,244 +1,740 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CAFE SUMMARY</title>
 
-    <meta name="description" content="カフェ巡り写真集">
+    <meta name="description" content="カフェ巡り写真集" />
 
     <!--リセットCSS-->
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Kiwi+Maru&family=Oooh+Baby&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Kiwi+Maru&family=Oooh+Baby&family=Zen+Antique&display=swap"
+      rel="stylesheet"
+    />
     <!--css-->
-    <link rel="stylesheet" href="cafe-summary-style.css">
+    <link rel="stylesheet" href="cafe-summary-style.css" />
     <!--js-->
     <script src="cafe-summary-script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!--ローディング画面-->
     <div id="loading">
-        <img src="cafe-summary-img/loading.svg" alt="ローディング">
+      <img src="cafe-summary-img/loading.svg" alt="ローディング" />
     </div>
 
     <div class="pages">
-        <aside class="sidebar-left">
-            <h1 class="cinzel">Cafe<br>Photo</h1>
-        </aside>
+      <aside class="sidebar-left">
+        <h1 class="cinzel">Cafe<br />Photo</h1>
+      </aside>
 
-        <div class="main-content">
-            <header class="top-img">
-                <div class="top-item">
-                    <img src="cafe-summary-img/after-all-coffee-1.webp" alt="アフターオールコーヒーのチーズケーキ">
-                </div>
-                <div class="top-item">
-                    <h1 class="cinzel">Cafe Photo</h1>
-                    <h2 class="oooh dark">I love sweets and coffee.</h2>
-                </div>
-                <div class="top-item item-small">
-                    <img src="cafe-summary-img/chiyaba-1.webp" alt="チャバのチャイとドーナツ">
-                </div>
-            </header>
+      <div class="main-content">
+        <header class="top-img">
+          <div class="top-item">
+            <img
+              src="cafe-summary-img/after-all-coffee-1.webp"
+              alt="アフターオールコーヒーのチーズケーキ"
+            />
+          </div>
+          <div class="top-item">
+            <h1 class="cinzel">Cafe Photo</h1>
+            <h2 class="oooh dark">I love sweets and coffee.</h2>
+          </div>
+          <div class="top-item item-small">
+            <img
+              src="cafe-summary-img/chiyaba-1.webp"
+              alt="チャバのチャイとドーナツ"
+            />
+          </div>
+        </header>
 
-            <section class="kiwi taglist">
-                <h3 class="oooh dark">Tag list</h3>
-                <p>
-                    <span class="trigger" data-target="akihabara">#秋葉原</span>
-                    <span class="trigger" data-target="ikebukuro">#池袋</span>
-                    <span class="trigger" data-target="omotesando">#表参道</span>
-                    <span class="trigger" data-target="kichijoji">#吉祥寺</span>
-                    <br>
-                    <span class="trigger" data-target="kojimachi">#麴町</span>
-                    <span class="trigger" data-target="santya">#三軒茶屋</span>
-                    <span class="trigger" data-target="shibuya">#渋谷</span>
-                    <span class="trigger" data-target="shinjuku">#新宿</span>
-                    <br>
-                    <span class="trigger" data-target="suidobashi">#水道橋</span>
-                    <span class="trigger" data-target="tamachi">#田町</span>
-                    <span class="trigger" data-target="nakameguro">#中目黒</span>
-                </p>
-            </section>
+        <section class="kiwi taglist">
+          <h3 class="oooh dark">Tag list</h3>
+          <p>
+            <span class="trigger" data-target="akihabara">#秋葉原</span>
+            <span class="trigger" data-target="ikebukuro">#池袋</span>
+            <span class="trigger" data-target="omotesando">#表参道</span>
+            <span class="trigger" data-target="kichijoji">#吉祥寺</span>
+            <br />
+            <span class="trigger" data-target="kojimachi">#麴町</span>
+            <span class="trigger" data-target="santya">#三軒茶屋</span>
+            <span class="trigger" data-target="shibuya">#渋谷</span>
+            <span class="trigger" data-target="shinjuku">#新宿</span>
+            <br />
+            <span class="trigger" data-target="suidobashi">#水道橋</span>
+            <span class="trigger" data-target="tamachi">#田町</span>
+            <span class="trigger" data-target="tokyo">#東京</span>
+            <span class="trigger" data-target="nakameguro">#中目黒</span>
+            <br />
+            <span class="trigger" data-target="asaka">#朝霞</span>
+            <span class="trigger" data-target="asakadai">#朝霞台</span>
+          </p>
+        </section>
 
-            <main class="container">
+        <!--作業-->
+        <main class="container">
+          <div class="item shinjuku gratin">
+            <img
+              src="cafe-summary-img/ejinbara-1.webp"
+              alt="珈琲貴族エジンバラのグラタン"
+            />
+            <p class="shop cinzel">珈琲貴族エジンバラ</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃グラタン</p>
+          </div>
 
-                <div class="item kojimachi basque-cheesecake">
-                    <img src="cafe-summary-img/ztto-morning-1.webp" alt="ズットモーニングのチーズケーキ">
-                    <p class="shop cinzel">ZTTo morning</p>
-                    <p class="tag kiwi">＃麹町&nbsp;＃バスクチーズケーキ</p>
-                </div>
+          <div class="item akihabara toast">
+            <img
+              src="cafe-summary-img/vaultcoffee-1.webp"
+              alt="ボルトコーヒーのシナモントースト"
+            />
+            <p class="shop cinzel">VAULTCOFFEE</p>
+            <p class="tag kiwi">＃秋葉原&nbsp;＃トースト</p>
+          </div>
 
-                <div class="item shinjuku gratin">
-                    <img src="cafe-summary-img/ejinbara-1.webp" alt="珈琲貴族エジンバラのグラタン">
-                    <p class="shop cinzel">珈琲貴族エジンバラ</p>
-                    <p class="tag kiwi">＃新宿&nbsp;＃グラタン</p>
-                </div>
+          <div class="item akihabara drink">
+            <img
+              src="cafe-summary-img/vaultcoffee-2.webp"
+              alt="ボルトコーヒーのラテ"
+            />
+            <p class="shop cinzel">VAULTCOFFEE</p>
+            <p class="tag kiwi">＃秋葉原&nbsp;＃ドリンク</p>
+          </div>
 
-                <div class="item shibuya tiramisu">
-                    <img src="cafe-summary-img/white-grass-1.webp" alt="ホワイトグラスコーヒーのティラミス">
-                    <p class="shop cinzel">WHITE GLASS COFFEE</p>
-                    <p class="tag kiwi">＃渋谷&nbsp;＃ティラミス</p>
-                </div>
+          <div class="item tamachi basque-cheesecake">
+            <img
+              src="cafe-summary-img/squad-base-cafe-1.webp"
+              alt="スクワッドベースカフェのチーズケーキ"
+            />
+            <p class="shop cinzel">Squead Base Cafe</p>
+            <p class="tag kiwi">＃田町&nbsp;＃バスクチーズケーキ</p>
+          </div>
 
-                <div class="item shibuya french-toast">
-                    <img src="cafe-summary-img/ivorish-1.webp" alt="アイボリッシュのフレンチトースト">
-                    <p class="shop cinzel">Ivorish</p>
-                    <p class="tag kiwi">＃渋谷&nbsp;＃フレンチトースト</p>
-                </div>
+          <div class="item tamachi drink">
+            <img
+              src="cafe-summary-img/squad-base-cafe-2.webp"
+              alt="スクワッドベースカフェのコーヒー"
+            />
+            <p class="shop cinzel">Squead Base Cafe</p>
+            <p class="tag kiwi">＃田町&nbsp;＃ドリンク</p>
+          </div>
 
-                <div class="item shibuya drink">
-                    <img src="cafe-summary-img/ivorish-2.webp" alt="アイボリッシュのカフェラテ">
-                    <p class="shop cinzel">Ivorish</p>
-                    <p class="tag kiwi">＃渋谷&nbsp;＃ドリンク</p>
-                </div>
+          <div class="item ikebukuro scone">
+            <img
+              src="cafe-summary-img/kimi-natural-1.webp"
+              alt="Kimi Natural 73+cafeのスコーン"
+            />
+            <p class="shop cinzel">Kimi Natural 73+cafe</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃スコーン</p>
+          </div>
 
-                <div class="item shinjuku basque-cheesecake">
-                    <img src="cafe-summary-img/after-all-coffee-1.webp" alt="アフターオールコーヒーのチーズケーキ">
-                    <p class="shop cinzel">AfterAllCoffee</p>
-                    <p class="tag kiwi">＃新宿&nbsp;＃バスクチーズケーキ</p>
-                </div>
+          <div class="item ikebukuro drink">
+            <img
+              src="cafe-summary-img/kimi-natural-2.webp"
+              alt="Kimi Natural 73+cafeのコーヒー"
+            />
+            <p class="shop cinzel">Kimi Natural 73+cafe</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃ドリンク</p>
+          </div>
 
-                <div class="item shinjuku basque-cheesecake">
-                    <img src="cafe-summary-img/ZsTEA-1.webp" alt="Z'sのチーズケーキ">
-                    <p class="shop cinzel">Z's TEA Shinjuku Gyoen</p>
-                    <p class="tag kiwi">＃新宿&nbsp;＃バスクチーズケーキ</p>
-                </div>
+          <div class="item ikebukuro tiramisu">
+            <img
+              src="cafe-summary-img/hakusyaku-1.webp"
+              alt="珈琲伯爵のティラミスケーキ"
+            />
+            <p class="shop cinzel">珈琲専門館&nbsp;伯爵</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃ティラミス</p>
+          </div>
 
-                <div class="item nakameguro drink donut">
-                    <img src="cafe-summary-img/chiyaba-1.webp" alt="Chiyabaのチャイとドーナツ">
-                    <p class="shop cinzel">Chiyaba</p>
-                    <p class="tag kiwi">＃中目黒&nbsp;＃ドリンク&nbsp;＃ドーナツ</p>
-                </div>
+          <div class="item shinjuku pudding">
+            <img
+              src="cafe-summary-img/coffee-seibu-1.webp"
+              alt="珈琲西武のプリン"
+            />
+            <p class="shop cinzel">珈琲西武</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃プリン</p>
+          </div>
 
-                <div class="item shinjuku donut">
-                    <img src="cafe-summary-img/pacific-bake-house-1.webp" alt="パシフィックベイクハウスのドーナツ">
-                    <p class="shop cinzel">Pacific BAKE HOUSE</p>
-                    <p class="tag kiwi">＃新宿&nbsp;＃ドーナツ</p>
-                </div>
+          <div class="item shinjuku parfait">
+            <img
+              src="cafe-summary-img/coffee-seibu-2.webp"
+              alt="珈琲西武のパフェ"
+            />
+            <p class="shop cinzel">珈琲西武</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃パフェ</p>
+          </div>
 
-                <div class="item akihabara toast">
-                    <img src="cafe-summary-img/vaultcoffee-1.webp" alt="ボルトコーヒーのシナモントースト">
-                    <p class="shop cinzel">VAULTCOFFEE</p>
-                    <p class="tag kiwi">＃秋葉原&nbsp;＃トースト</p>
-                </div>
+          <div class="item kichijoji gateau">
+            <img
+              src="cafe-summary-img/iitoki-1.webp"
+              alt="イイトキカフェのガトーショコラ"
+            />
+            <p class="shop cinzel">ii-TOKi COFFEE</p>
+            <p class="tag kiwi">＃吉祥寺&nbsp;＃ガトーショコラ</p>
+          </div>
 
-                <div class="item akihabara drink">
-                    <img src="cafe-summary-img/vaultcoffee-2.webp" alt="ボルトコーヒーのラテ">
-                    <p class="shop cinzel">VAULTCOFFEE</p>
-                    <p class="tag kiwi">＃秋葉原&nbsp;＃ドリンク</p>
-                </div>
+          <div class="item ikebukuro pancake">
+            <img
+              src="cafe-summary-img/hukurosyo-1.webp"
+              alt="梟書茶房のパンケーキ"
+            />
+            <p class="shop cinzel">梟書茶房</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃パンケーキ</p>
+          </div>
 
-                <div class="item shibuya rare-cheesecake">
-                    <img src="cafe-summary-img/tailored-cafe-1.webp" alt="テイラードカフェのレアチーズケーキ">
-                    <p class="shop cinzel">TAILORED CAFE SHIBUYA</p>
-                    <p class="tag kiwi">＃渋谷&nbsp;＃レアチーズケーキ</p>
-                </div>
+          <div class="item tamachi bagel">
+            <img
+              src="cafe-summary-img/jaho-1.webp"
+              alt="ヤホコーヒーのベーグル、シナモン"
+            />
+            <p class="shop cinzel">Jaho coffee</p>
+            <p class="tag kiwi">＃田町&nbsp;＃ベーグル</p>
+          </div>
 
-                <div class="item shibuya drink">
-                    <img src="cafe-summary-img/sharkcoffee-1.webp" alt="シャークコーヒーのラズベリーパイ">
-                    <p class="shop cinzel">SHARK COFFEE</p>
-                    <p class="tag kiwi">＃渋谷&nbsp;＃パイ</p>
-                </div>
+          <!--味-->
 
-                <div class="item santya tart">
-                    <img src="cafe-summary-img/kabotya-1.webp" alt="カボチャのタルト">
-                    <p class="shop cinzel">カボチャ</p>
-                    <p class="tag kiwi">＃三軒茶屋&nbsp;＃タルト</p>
-                </div>
-                
-                <div class="item tamachi basque-cheesecake">
-                    <img src="cafe-summary-img/squad-base-cafe-1.webp" alt="スクワッドベースカフェのチーズケーキ">
-                    <p class="shop cinzel">Squead Base Cafe</p>
-                    <p class="tag kiwi">＃田町&nbsp;＃バスクチーズケーキ</p>
-                </div>
+          <div class="item kojimachi basque-cheesecake">
+            <img
+              src="cafe-summary-img/ztto-morning-1.webp"
+              alt="ズットモーニングのチーズケーキ"
+            />
+            <p class="shop cinzel">ZTTo morning</p>
+            <p class="tag kiwi">＃麹町&nbsp;＃バスクチーズケーキ</p>
+          </div>
 
-                <div class="item shibuya drink">
-                    <img src="cafe-summary-img/smith-1.webp" alt="スミスティーメーカーのレモンクリームラテ">
-                    <p class="shop cinzel">スミス・ティーメーカー</p>
-                    <p class="tag kiwi">＃渋谷&nbsp;＃ドリンク</p>
-                </div>
-                
-                <div class="item shibuya rare-cheesecake">
-                    <img src="cafe-summary-img/smith-2.webp" alt="スミスティーメーカーのアールグレイチーズケーキ">
-                    <p class="shop cinzel">スミス・ティーメーカー</p>
-                    <p class="tag kiwi">＃渋谷&nbsp;＃レアチーズケーキ</p>
-                </div>
+          <div class="item shibuya french-toast">
+            <img
+              src="cafe-summary-img/ivorish-1.webp"
+              alt="アイボリッシュのフレンチトースト"
+            />
+            <p class="shop cinzel">Ivorish</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃フレンチトースト</p>
+          </div>
 
-                <div class="item kichijoji gateau">
-                    <img src="cafe-summary-img/iitoki-1.webp" alt="イイトキカフェのガトーショコラ">
-                    <p class="shop cinzel">ii-TOKi COFFEE</p>
-                    <p class="tag kiwi">＃吉祥寺&nbsp;＃ガトーショコラ</p>
-                </div>
+          <div class="item shibuya drink">
+            <img
+              src="cafe-summary-img/ivorish-2.webp"
+              alt="アイボリッシュのカフェラテ"
+            />
+            <p class="shop cinzel">Ivorish</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃ドリンク</p>
+          </div>
 
-                <div class="item omotesando mont-blanc">
-                    <img src="cafe-summary-img/urasando-1.webp" alt="裏参道ガーデンのモンブラン">
-                    <p class="shop cinzel">裏参道ガーデン</p>
-                    <p class="tag kiwi">＃表参道&nbsp;＃モンブラン</p>
-                </div>
-                
-                <div class="item ikebukuro french-toast">
-                    <img src="cafe-summary-img/247-ikebukuro-1.webp" alt="24 7 café apartment 池袋のフレンチトースト">
-                    <p class="shop cinzel">24 7 café apartment 池袋</p>
-                    <p class="tag kiwi">＃池袋&nbsp;＃フレンチトースト</p>
-                </div>
+          <div class="item shinjuku basque-cheesecake">
+            <img
+              src="cafe-summary-img/after-all-coffee-1.webp"
+              alt="アフターオールコーヒーのチーズケーキ"
+            />
+            <p class="shop cinzel">AfterAllCoffee</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃バスクチーズケーキ</p>
+          </div>
 
-                <div class="item suidobashi toast">
-                    <img src="cafe-summary-img/dixans-1.webp" alt="ディゾンのトースト">
-                    <p class="shop cinzel">10 DIXANS</p>
-                    <p class="tag kiwi">＃水道橋&nbsp;＃トースト</p>
-                </div>
+          <div class="item shinjuku basque-cheesecake">
+            <img src="cafe-summary-img/ZsTEA-1.webp" alt="Z'sのチーズケーキ" />
+            <p class="shop cinzel">Z's TEA Shinjuku Gyoen</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃バスクチーズケーキ</p>
+          </div>
 
-                <div class="item suidobashi drink">
-                    <img src="cafe-summary-img/dixans-2.webp" alt="ディゾンのトースト">
-                    <p class="shop cinzel">10 DIXANS</p>
-                    <p class="tag kiwi">＃水道橋&nbsp;＃ドリンク</p>
-                </div>
+          <div class="item nakameguro drink donut">
+            <img
+              src="cafe-summary-img/chiyaba-1.webp"
+              alt="Chiyabaのチャイとドーナツ"
+            />
+            <p class="shop cinzel">Chiyaba</p>
+            <p class="tag kiwi">＃中目黒&nbsp;＃ドリンク&nbsp;＃ドーナツ</p>
+          </div>
 
-                <div class="item shibuya french-toast">
-                    <img src="cafe-summary-img/pan-es-machi-1.webp" alt="パンとエスプレッソとまちあわせのフレンチトースト">
-                    <p class="shop cinzel">パンとエスプレッソとまちあわせ</p>
-                    <p class="tag kiwi">＃渋谷&nbsp;＃フレンチトースト</p>
-                </div>
-                
-                <div class="item omotesando crepe">
-                    <img src="cafe-summary-img/crepe-es-1.webp" alt="クレープとエスプレッソとのクレープ">
-                    <p class="shop cinzel">クレープとエスプレッソと</p>
-                    <p class="tag kiwi">＃表参道&nbsp;＃クレープ</p>
-                </div>
+          <div class="item shinjuku donut">
+            <img
+              src="cafe-summary-img/pacific-bake-house-1.webp"
+              alt="パシフィックベイクハウスのドーナツ"
+            />
+            <p class="shop cinzel">Pacific Bake House</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃ドーナツ</p>
+          </div>
 
-                <div class="item shibuya baked-cheesecake">
-                    <img src="cafe-summary-img/nurikabe-1.webp" alt="ヌリカベカフェのチーズケーキ">
-                    <p class="shop cinzel">nurikabe cafe</p>
-                    <p class="tag kiwi">＃渋谷&nbsp;＃ベイクドチーズケーキ</p>
-                </div>
+          <div class="item shibuya rare-cheesecake">
+            <img
+              src="cafe-summary-img/tailored-cafe-1.webp"
+              alt="テイラードカフェのレアチーズケーキ"
+            />
+            <p class="shop cinzel">TAILORED CAFE SHIBUYA</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃レアチーズケーキ</p>
+          </div>
 
-                <div class="item shibuya drink">
-                    <img src="cafe-summary-img/nurikabe-2.webp" alt="ヌリカベカフェのカフェラテ">
-                    <p class="shop cinzel">nurikabe cafe</p>
-                    <p class="tag kiwi">#渋谷&nbsp;#ドリンク</p>
-                </div>
-                
-                <div class="item tamachi basque-cheesecake">
-                    <img src="cafe-summary-img/hacco-atelier-1.webp" alt="発酵アトリエのチーズケーキ">
-                    <p class="shop cinzel">発酵アトリエ</p>
-                    <p class="tag kiwi">＃田町&nbsp;＃バスクチーズケーキ</p>
-                </div>
+          <div class="item ikebukuro drink">
+            <img
+              src="cafe-summary-img/coffee-tei-1.webp"
+              alt="皇琲亭のコーヒー"
+            />
+            <p class="shop cinzel">皇琲亭</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃ドリンク</p>
+          </div>
 
-            </main>
+          <div class="item ikebukuro rare-cheesecake">
+            <img
+              src="cafe-summary-img/coffee-tei-2.webp"
+              alt="皇琲亭のチーズケーキ"
+            />
+            <p class="shop cinzel">皇琲亭</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃レアチーズケーキ</p>
+          </div>
 
-            
+          <div class="item shibuya pie">
+            <img
+              src="cafe-summary-img/sharkcoffee-1.webp"
+              alt="シャークコーヒーのラズベリーパイ"
+            />
+            <p class="shop cinzel">SHARK COFFEE</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃パイ</p>
+          </div>
 
-            <footer>
+          <div class="item santya tart">
+            <img src="cafe-summary-img/kabotya-1.webp" alt="カボチャのタルト" />
+            <p class="shop cinzel">カボチャ</p>
+            <p class="tag kiwi">＃三軒茶屋&nbsp;＃タルト</p>
+          </div>
 
-            </footer>
-        </div>
+          <div class="item shibuya drink">
+            <img
+              src="cafe-summary-img/smith-1.webp"
+              alt="スミスティーメーカーのレモンクリームラテ"
+            />
+            <p class="shop cinzel">スミス・ティーメーカー</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃ドリンク</p>
+          </div>
 
-        <aside class="sidebar-right">
-            <h3 class="oooh">I love sweets and coffee.</h3>
-        </aside>
+          <div class="item shibuya rare-cheesecake">
+            <img
+              src="cafe-summary-img/smith-2.webp"
+              alt="スミスティーメーカーのアールグレイチーズケーキ"
+            />
+            <p class="shop cinzel">スミス・ティーメーカー</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃レアチーズケーキ</p>
+          </div>
+
+          <div class="item shinjuku rare-cheesecake">
+            <img
+              src="cafe-summary-img/13cafe-1.webp"
+              alt="サーティーンカフェのチーズケーキ"
+            />
+            <p class="shop cinzel">サーティーンカフェ</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃レアチーズケーキ</p>
+          </div>
+
+          <div class="item omotesando mont-blanc">
+            <img
+              src="cafe-summary-img/urasando-1.webp"
+              alt="裏参道ガーデンのモンブラン"
+            />
+            <p class="shop cinzel">裏参道ガーデン</p>
+            <p class="tag kiwi">＃表参道&nbsp;＃モンブラン</p>
+          </div>
+
+          <div class="item tokyo french-toast">
+            <img
+              src="cafe-summary-img/front-room-1.webp"
+              alt="THE FRONT ROOMのフレンチトースト"
+            />
+            <p class="shop cinzel">THE FRONT ROOM</p>
+            <p class="tag kiwi">＃東京&nbsp;＃フレンチトースト</p>
+          </div>
+
+          <div class="item shinjuku pancake">
+            <img
+              src="cafe-summary-img/oluolu-1.webp"
+              alt="オルオルのダッチパンケーキ"
+            />
+            <p class="shop cinzel">Hawaiian Cafe OluOlu</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃パンケーキ</p>
+          </div>
+
+          <div class="item suidobashi toast">
+            <img
+              src="cafe-summary-img/dixans-1.webp"
+              alt="ディゾンのトースト"
+            />
+            <p class="shop cinzel">10 DIXANS</p>
+            <p class="tag kiwi">＃水道橋&nbsp;＃トースト</p>
+          </div>
+
+          <div class="item suidobashi drink">
+            <img
+              src="cafe-summary-img/dixans-2.webp"
+              alt="ディゾンのトースト"
+            />
+            <p class="shop cinzel">10 DIXANS</p>
+            <p class="tag kiwi">＃水道橋&nbsp;＃ドリンク</p>
+          </div>
+
+          <div class="item shibuya french-toast">
+            <img
+              src="cafe-summary-img/pan-es-machi-1.webp"
+              alt="パンとエスプレッソとまちあわせのフレンチトースト"
+            />
+            <p class="shop cinzel">パンとエスプレッソとまちあわせ</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃フレンチトースト</p>
+          </div>
+
+          <div class="item omotesando crepe">
+            <img
+              src="cafe-summary-img/crepe-es-1.webp"
+              alt="クレープとエスプレッソとのクレープ"
+            />
+            <p class="shop cinzel">クレープとエスプレッソと</p>
+            <p class="tag kiwi">＃表参道&nbsp;＃クレープ</p>
+          </div>
+
+          <div class="item shibuya baked-cheesecake">
+            <img
+              src="cafe-summary-img/nurikabe-1.webp"
+              alt="ヌリカベカフェのチーズケーキ"
+            />
+            <p class="shop cinzel">nurikabe cafe</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃ベイクドチーズケーキ</p>
+          </div>
+
+          <div class="item shibuya drink">
+            <img
+              src="cafe-summary-img/nurikabe-2.webp"
+              alt="ヌリカベカフェのカフェラテ"
+            />
+            <p class="shop cinzel">nurikabe cafe</p>
+            <p class="tag kiwi">#渋谷&nbsp;#ドリンク</p>
+          </div>
+
+          <div class="item ikebukuro baked-cheesecake">
+            <img
+              src="cafe-summary-img/takase-1.webp"
+              alt="タカセのチーズケーキ"
+            />
+            <p class="shop cinzel">タカセ</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃ベイクドチーズケーキ</p>
+          </div>
+
+          <div class="item shibuya basque-cheesecake">
+            <img
+              src="cafe-summary-img/kyotouji-1.webp"
+              alt="京都宇治 藤井茗縁の抹茶バスク"
+            />
+            <p class="shop cinzel">京都宇治 藤井茗縁</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃バスクチーズケーキ</p>
+          </div>
+
+          <div class="item ikebukuro tiramisu">
+            <img
+              src="cafe-summary-img/296coffee-1.webp"
+              alt="296珈琲のティラミス"
+            />
+            <p class="shop cinzel">@296珈琲</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃ティラミス</p>
+          </div>
+
+          <div class="item tamachi basque-cheesecake">
+            <img
+              src="cafe-summary-img/hacco-atelier-1.webp"
+              alt="発酵アトリエのチーズケーキ"
+            />
+            <p class="shop cinzel">発酵アトリエ</p>
+            <p class="tag kiwi">＃田町&nbsp;＃バスクチーズケーキ</p>
+          </div>
+
+          <div class="item shinjuku pudding tart">
+            <img
+              src="cafe-summary-img/tubasa-coffee-1.webp"
+              alt="TSUBASA COFFEEのプリンタルト"
+            />
+            <p class="shop cinzel">Tsubasa&nbsp;Coffee</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃プリン&nbsp;＃タルト</p>
+          </div>
+
+          <div class="item ikebukuro hotcake">
+            <img
+              src="cafe-summary-img/lu-poire-1.webp"
+              alt="ル・ポワールのホットケーキ"
+            />
+            <p class="shop cinzel">ル・ポワール</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃ホットケーキ</p>
+          </div>
+
+          <div class="item ikebukuro crowafle">
+            <img
+              src="cafe-summary-img/clappers-diner-1.webp"
+              alt="クラッパーズダイナーのクロッフル"
+            />
+            <p class="shop cinzel">Clappers&nbsp;Diner</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃クロッフル</p>
+          </div>
+
+          <div class="item omotesando scone">
+            <img
+              src="cafe-summary-img/chavaty-1.webp"
+              alt="CHAVATYのスコーン"
+            />
+            <p class="shop cinzel">Chavaty</p>
+            <p class="tag kiwi">＃表参道&nbsp;＃スコーン</p>
+          </div>
+
+          <div class="item asaka french-toast">
+            <img
+              src="cafe-summary-img/cafe-mort-1.webp"
+              alt="カフェモートのフレンチトースト"
+            />
+            <p class="shop cinzel">カフェ・モート</p>
+            <p class="tag kiwi">＃朝霞&nbsp;＃フレンチトースト</p>
+          </div>
+
+          <div class="item asaka drink">
+            <img
+              src="cafe-summary-img/lakia-1.webp"
+              alt="ラキアカフェのアイスティー"
+            />
+            <p class="shop cinzel">ラキアカフェ</p>
+            <p class="tag kiwi">＃朝霞&nbsp;＃ドリンク</p>
+          </div>
+
+          <div class="item asaka scone">
+            <img
+              src="cafe-summary-img/lakia-2.webp"
+              alt="ラキアカフェのスコーン"
+            />
+            <p class="shop cinzel">ラキアカフェ</p>
+            <p class="tag kiwi">＃朝霞&nbsp;＃スコーン</p>
+          </div>
+
+          <div class="item asaka basque-cheesecake">
+            <img
+              src="cafe-summary-img/juko-1.webp"
+              alt="JUKOCAFEのバスクチーズケーキ"
+            />
+            <p class="shop cinzel">Juko&nbsp;Cafe</p>
+            <p class="tag kiwi">＃朝霞&nbsp;＃バスクチーズケーキ</p>
+          </div>
+
+          <div class="item asaka almond-cake">
+            <img
+              src="cafe-summary-img/juko-2.webp"
+              alt="JUKOCAFEのアーモンドケーキ"
+            />
+            <p class="shop cinzel">Juko&nbsp;Cafe</p>
+            <p class="tag kiwi">＃朝霞&nbsp;＃アーモンドケーキ</p>
+          </div>
+
+          <div class="item asaka carrot-cake">
+            <img
+              src="cafe-summary-img/juko-3.webp"
+              alt="JUKOCAFEのキャロットケーキ"
+            />
+            <p class="shop cinzel">Juko&nbsp;Cafe</p>
+            <p class="tag kiwi">＃朝霞&nbsp;＃キャロットケーキ</p>
+          </div>
+
+          <div class="item asaka drink">
+            <img
+              src="cafe-summary-img/juko-4.webp"
+              alt="JUKOCAFEのアイスカフェラテ"
+            />
+            <p class="shop cinzel">Juko&nbsp;Cafe</p>
+            <p class="tag kiwi">＃朝霞&nbsp;＃ドリンク</p>
+          </div>
+
+          <div class="item asaka drink">
+            <img
+              src="cafe-summary-img/juko-5.webp"
+              alt="JUKOCAFEのホットカフェラテ"
+            />
+            <p class="shop cinzel">Juko&nbsp;Cafe</p>
+            <p class="tag kiwi">＃朝霞&nbsp;＃ドリンク</p>
+          </div>
+
+          <div class="item asakadai crowafle">
+            <img
+              src="cafe-summary-img/hachiju-1.webp"
+              alt="八十館のクロワッフル"
+            />
+            <p class="shop cinzel">八十館</p>
+            <p class="tag kiwi">＃朝霞台&nbsp;＃クロワッフル</p>
+          </div>
+
+          <div class="item wako baked-cheesecake">
+            <img
+              src="cafe-summary-img/kitori-1.webp"
+              alt="キトリのチーズケーキ"
+            />
+            <p class="shop cinzel">キトリ</p>
+            <p class="tag kiwi">＃和光市&nbsp;＃ベイクドチーズケーキ</p>
+          </div>
+
+          <!--店内-->
+
+          <div class="item shinjuku baked-cheesecake">
+            <img
+              src="cafe-summary-img/attic-room-shinjuku-1.webp"
+              alt="アティックルームカフェ新宿のチーズケーキ"
+            />
+            <p class="shop cinzel">attic room 新宿</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃ベイクドチーズケーキ</p>
+          </div>
+
+          <div class="item shinjuku baked-cheesecake">
+            <img
+              src="cafe-summary-img/hananoaru-1.webp"
+              alt="花のある棲家のチーズケーキ"
+            />
+            <p class="shop cinzel">花のある棲家</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃ベイクドチーズケーキ</p>
+          </div>
+
+          <div class="item ikebukuro french-toast">
+            <img
+              src="cafe-summary-img/247-ikebukuro-1.webp"
+              alt="24 7 café apartment 池袋のフレンチトースト"
+            />
+            <p class="shop cinzel">24 7 café apartment 池袋</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃フレンチトースト</p>
+          </div>
+
+          <div class="item ikebukuro drink">
+            <img
+              src="cafe-summary-img/247-ikebukuro-2.webp"
+              alt="24 7 café apartment 池袋のコーヒー"
+            />
+            <p class="shop cinzel">24 7 café apartment 池袋</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃ドリンク</p>
+          </div>
+
+          <div class="item shibuya tart">
+            <img
+              src="cafe-summary-img/jinnnan-1.webp"
+              alt="ジンナンカフェのアップルタルト"
+            />
+            <p class="shop cinzel">Jinnnan Cafe 渋谷</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃アップルタルト</p>
+          </div>
+
+          <div class="item shibuya catalana">
+            <img
+              src="cafe-summary-img/jinnnan-2.webp"
+              alt="ジンナンカフェのアップルタルト"
+            />
+            <p class="shop cinzel">Jinnnan Cafe 渋谷</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃カタラーナ</p>
+          </div>
+
+          <div class="item ikebukuro drink">
+            <img
+              src="cafe-summary-img/marmade-1.webp"
+              alt="マーメイドコーヒーロースターズのカフェラテ"
+            />
+            <p class="shop cinzel">マーメイドコーヒーロースターズ</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃ドリンク</p>
+          </div>
+
+          <div class="item shinjuku rare-cheesecake">
+            <img
+              src="cafe-summary-img/ranburu-1.webp"
+              alt="名曲･珈琲 新宿 らんぶるのチーズケーキ"
+            />
+            <p class="shop cinzel">名曲･珈琲 新宿 らんぶる</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃レアチーズケーキ</p>
+          </div>
+
+          <div class="item ikebukuro terrine">
+            <img
+              src="cafe-summary-img/chanoma-1.webp"
+              alt="チャノマのテリーヌ"
+            />
+            <p class="shop cinzel">Chanoma</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃テリーヌ</p>
+          </div>
+
+          <div class="item shibuya donut">
+            <img
+              src="cafe-summary-img/tencups-1.webp"
+              alt="テンカップスのドーナツ"
+            />
+            <p class="shop cinzel">Ten Cups</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃ドーナツ</p>
+          </div>
+
+          <div class="item shibuya drink">
+            <img
+              src="cafe-summary-img/tencups-2.webp"
+              alt="テンカップスのコーヒー"
+            />
+            <p class="shop cinzel">Ten Cups</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃ドリンク</p>
+          </div>
+
+          <div class="item shinjuku french-toast">
+            <img
+              src="cafe-summary-img/cafe-rally-1.webp"
+              alt="カフェラリーのフレンチトースト"
+            />
+            <p class="shop cinzel">カフェラリー</p>
+            <p class="tag kiwi">＃新宿&nbsp;＃フレンチトースト</p>
+          </div>
+
+          <div class="item shibuya tiramisu">
+            <img
+              src="cafe-summary-img/white-grass-1.webp"
+              alt="ホワイトグラスコーヒーのティラミス"
+            />
+            <p class="shop cinzel">WHITE&nbsp;GLASS&nbsp;COFFEE</p>
+            <p class="tag kiwi">＃渋谷&nbsp;＃ティラミス</p>
+          </div>
+
+          <div class="item shinjuku malone-cake">
+            <img
+              src="cafe-summary-img/crossing-1.webp"
+              alt="Shinjuku CROSSING cafe&diningのチーズケーキ"
+            />
+            <p class="shop cinzel">
+              Shinjuku&nbsp;Crossing<br />cafe&amp;dining
+            </p>
+            <p class="tag kiwi">＃新宿&nbsp;＃マロンケーキ</p>
+          </div>
+
+          <div class="item ikebukuro waffle">
+            <img
+              src="cafe-summary-img/racines-1.webp"
+              alt="ラシーヌファームトゥーパークのワッフル"
+            />
+            <p class="shop cinzel">ラシーヌファーム<br />トゥーパーク</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃ワッフル</p>
+          </div>
+
+          <div class="item ikebukuro drink">
+            <img src="cafe-summary-img/kura-1.webp" alt="蔵のコーヒー" />
+            <p class="shop cinzel">蔵</p>
+            <p class="tag kiwi">＃池袋&nbsp;＃ドリンク</p>
+          </div>
+
+          <div class="item asaka pie">
+            <img
+              src="cafe-summary-img/honey-1.webp"
+              alt="ハニーのアップルパイ"
+            />
+            <p class="shop cinzel">ハニー</p>
+            <p class="tag kiwi">＃朝霞&nbsp;＃パイ</p>
+          </div>
+
+          <div class="item asakadai mont-blanc">
+            <img src="cafe-summary-img/ruby-1.webp" alt="ルビーのモンブラン" />
+            <p class="shop cinzel">ルビー</p>
+            <p class="tag kiwi">＃朝霞台&nbsp;＃モンブラン</p>
+          </div>
+        </main>
+
+        <footer></footer>
+      </div>
+
+      <aside class="sidebar-right">
+        <h3 class="oooh">I love sweets and coffee.</h3>
+      </aside>
     </div>
-</body>
+  </body>
 </html>
