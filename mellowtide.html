@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mellow Tide</title>
+
+    <meta
+      name="description"
+      content="海が見えるカフェ、ステージがあるカフェ、ゆったりした空間のカフェ"
+    />
+    <meta name="robots" content="noindex" />
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="sea-cafe-style.css" />
+
+    <script src="sea-cafe-script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="loading">
+      <div class="looping-rhombuses-spinner">
+        <div class="rhombus"></div>
+        <div class="rhombus"></div>
+        <div class="rhombus"></div>
+      </div>
+    </div>
+
+    <header>
+      <h1 class="font-b">Mellow&nbsp;Tide</h1>
+      <nav>
+        <button id="menu-open" class="btn-menu">
+          <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_2)">
+            <line y1="1" x2="31" y2="1"  stroke-width="2"/>
+            <line y1="14" x2="31" y2="14" stroke-width="2"/>
+            <line y1="27" x2="31" y2="27" stroke-width="2"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_2">
+            <rect width="31" height="28" />
+            </clipPath>
+            </defs>
+          </svg>
+        </button>
+
+        <div id="menu-panel">
+          <button id="menu-close" class="btn-menu">
+            <svg width="33" height="29" viewBox="0 0 33 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31.6709 0.742188L16.916 14.0674L32.3418 28L31.6709 28.7422L16.1709 14.7422L0.670898 28.7422L0 28L15.4248 14.0674L0.670898 0.742188L1.34082 0L16.1709 13.3936L31.001 0L31.6709 0.742188Z" fill="#8AC8CF"/>
+            </svg>
+          </button>
+
+          <ul class="menu-list font-b">
+            <li><a class="menu-item" href="#">Top</a></li>
+            <li><a class="menu-item" href="#concept">Concept</a></li>
+            <li><a class="menu-item" href="#music">Music</a></li>
+            <li><a class="menu-item" href="#time">Time</a></li>
+            <li><a class="menu-item" href="#coffee">Coffee</a></li>
+            <li><a class="menu-item" href="#address">Address</a></li>
+            <li><a class="menu-item" href="#">ご予約はこちら</a></li>
+          </ul>
+        </div>
+
+    </nav>
+
+    </header>
+
+    <div class="btn f-br">
+      <a class="r-btn" href="">ご予約はこちら</a>
+    </div>
+
+    <main>
+      <section>
+      <div class="top-img font-b">
+      </div>
+      <h3 class="top-text font-a">様々なものに追われる毎日に<br>少し疲れていませんか？</h3>
+      </section>
+
+      <section id="concept" class="mega-con font-b">
+        <h2>CONCEPT</h2>
+
+        <h3 class="font-a">心がほどける、特別な時間を</h3>
+        <div>
+          <img class="mark" src="sea-img/nami.svg" alt="貝のマーク" />
+        </div>
+        <p>
+          ミニステージでのライブとコーヒー<br />
+          窓の外に広がる海と空、緑につつまれて<br />
+          ゆったりとした時間を
+        </p>
+
+
+      </section>
+
+      <section id="music" class="mega-con font-b">
+        <h2>MUSIC</h2>
+        <img class="image" src="sea-img/music-img.webp" alt="ステージで歌う女性">
+
+        <h3 class="font-a">自然と調和するミニステージ</h3>
+        <div>
+          <img class="mark" src="sea-img/nami.svg" alt="貝のマーク" />
+        </div>
+        <p>
+          カフェ内のミニステージで<br />
+          ライブを定期的に開催。
+        </p>
+
+        <p>
+          音楽とともに<br />
+          心がほどけるひとときを。
+        </p>
+
+        <div class="btn">
+          <a class="r-btn font-a" href="">MORE</a>
+        </div>
+      </section>
+
+      <section id="time" class="mega-con font-b">
+        <h2>TIME</h2>
+        <img class="image" src="sea-img/vew-img.webp" alt="窓からの景色">
+
+        <h3 class="font-a">ゆっくりとした贅沢な時間</h3>
+        <div>
+          <img class="mark" src="sea-img/nami.svg" alt="貝のマーク" />
+        </div>
+        <p>
+          時間の移ろいを感じながら<br />
+          自分らしくゆっくりと<br />
+          お過ごしください。
+        </p>
+
+        <div class="btn">
+          <a class="r-btn font-a" href="">MORE</a>
+        </div>
+      </section>
+
+      <section id="coffee" class="mega-con font-b">
+        <h2>COFFEE</h2>
+        <img class="image" src="sea-img/coffee-img.jpeg" alt="珈琲豆">
+
+        <h3 class="font-a">こだわりの自家焙煎コーヒー</h3>
+        <div>
+          <img class="mark" src="sea-img/nami.svg" alt="貝のマーク" />
+        </div>
+        <p>
+          豆の個性を引き出した<br />
+          上質なコーヒーを楽しめます。
+        </p>
+
+        <div class="btn">
+          <a class="r-btn font-a" href="">MORE</a>
+        </div>
+      </section>
+
+      
+
+      <section id="summary" class="mega-con font-b">
+        <h3 class="font-a">日々の疲れを忘れ<br />あなた本来の輝きを取り戻す</h3>
+
+        <p>
+          仕事や日常の忙しさから少し離れて<br />
+          上質なコーヒーと音楽、心地よい空間が<br />
+          あなたを優しく包み込みます。
+        </p>
+
+        <div class="btn">
+        <a class="r-btn" href="">ご予約はこちら</a>
+    </div>
+
+
+      </section>
+    </main>
+
+    <footer>
+        <div>
+                <div id="address" class="address">
+                  <h1 class="font-b">Mellow Tide</h1>
+                  <div class="map font-b">
+                  <table>
+                    <tr>
+                      <th>住所</th>
+                      <td>〒XXX-XXXX<br>XX県XXXXXXX XX-XX-XX</td>
+                    </tr>
+                    <tr>
+                      <th>営業時間</th>
+                      <td>10:00～21:00</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6485.448495594524!2d140.0418531989066!3d35.6345239319681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1782036006348!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </td>
+                    </tr>
+                  </table>
+                  </div>
+
+            
+                <div class="caution">
+                    <p>※このサイトはポートフォリオ用の架空の店舗サイトです。<br>実在の人物、団体、店舗とは一切関係ありません。</p>
+                </div>
+                <div class="copyright">
+                    <small>&copy; Mellow Tide</small>
+                </div>
+          
+        </div>
+    </footer>
+  </body>
+</html>
