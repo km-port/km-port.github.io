@@ -175,8 +175,13 @@ h3{
     text-align: center;
     border-top: 1px solid #544546;
 }
-.taglist p{
+.taglist-p{
     line-height: 3;
+}
+
+.taglist-p span{
+    display: inline-block;
+    white-space: nowrap; 
 }
 
 .item{
