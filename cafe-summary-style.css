@@ -140,6 +140,26 @@ h3{
     visibility: hidden;
 }
 
+#zoomback{
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color:rgba(0,0,0,0.8);
+
+    display: none;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#zoomimg {
+width:20%;
+border: solid 5px #fff;
+}
+
 .sidebar-left, .sidebar-right{
     display: none;
     background-color: #544546;
